@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+/* -=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=- */
+
+header {
+    height: 20rem;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #093c60;
+}
+
+.header-logo {
+    width: 50%;
+    color: #81b741;
+}
+
+.header-logo p {
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 0;
+    position: relative;
+    top: -1rem;
+}
+
+.header-logo img {
+    margin-bottom: 0px;
+}
+
+.header-cart {
+    width: 200px;
+    display: block;
+    color: white;
+}
+
+.header-cart img, .header-cart p {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.header-cart img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header-cart a {
+    background-color: #81b741;
+    width: 100%;
+}
+
+/* =-=-=-=-=-=-=-=- DOG CARDS -=-=-=-=-=-=-=-= */
+
+.homepage-dogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dog {
+    max-width: 21%;
+    box-shadow: 0 0 5px gray;
+    margin: 2.5rem 0;
+}
+
+.dog img {
+    width: 100%;
+}
