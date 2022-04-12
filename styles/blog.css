@@ -12,6 +12,7 @@ h2 {
 
 .blog-post {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 7rem;
 }
 
@@ -22,6 +23,10 @@ h2 {
 .blog-post img {
     margin: auto 5% auto 0;
     width: 20rem;
+}
+
+.blog-text {
+    width: 60%;
 }
 
 .blog-text p {
