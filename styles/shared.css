@@ -87,7 +87,7 @@ header {
 .dog {
     width: 16rem;
     box-shadow: 0 0 5px gray;
-    margin: 2.5rem 1.5rem;
+    margin: 1.5rem 0.5rem;
 }
 
 .dog img {
