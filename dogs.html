@@ -20,19 +20,21 @@
                     <p>Seattle's premiere dog adoption agency</p>
                 </div>
                 <div class="header-cart">
-                    <img src="images/cart-icon.svg" height="50" width="50" alt="Shopping cart">
-                    <p class="total-price">$1234.56</p>
-                    <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+                    <div class="cart-cost">
+                        <img src="images/cart-icon.svg" height="50" width="50" alt="Shopping cart">
+                        <p class="total-price">$1234.56</p>
+                    </div>
+                    <button href="checkout.html" class="btn checkout-btn">Checkout</button>
                 </div>
             </header>
             <!-- Header End -->
 
             <!-- Nav Start -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dogs.html">Dogs</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+            <nav class="flex">
+                <ul class="fit-content">
+                    <li><p><a href="index.html">Home</a> &#x2f;</p></li>
+                    <li><p><a href="dogs.html">Dogs</a> &#x2f;</p></li>
+                    <li><p><a href="blog.html">Blog</a></p></li>
                 </ul>
             </nav>
             <!-- Nav End -->
@@ -41,7 +43,7 @@
             <div class="flex">
                 <!-- Start of Dog Cards -->
                 <section class="homepage-dogs fit-content">
-                    <h1 class="hide">Here are all of our Dogs!</h1>
+                    <h1 class="dogs-title">Here are all of our Dogs!</h1>
                     <article class="dog">
                         <img src="images/murphy-card.jpg" alt="A sad dog">
                         <div class="about-dog">
