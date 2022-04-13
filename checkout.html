@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Checkout | ADOPTADOG</title>
         <link rel="stylesheet" type="text/css" href="styles/shared.css">
+        <link rel="stylesheet" type="text/css" href="styles/checkout.css">
     </head>
     <body>
 
@@ -41,120 +42,128 @@
             <!-- Nav End -->
 
             <!-- Start of Content -->
-            <div class="content">
-                <h1>Checkout</h1>
-                <form method="post" class="checkout-form">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="checkout-full-width" required>
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" class="checkout-full-width" required>
-                    <label for="street">Street Address</label>
-                    <input type="text" name="street" id="street" class="checkout-full-width" required>
-                    <div class="address-city">
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city" required>
-                        <label for="state">State</label>
-                        <select name="state" id="state" required>
+            <div class="content flex">
+                <div class="fit-content">
+                    <h1>Checkout</h1>
+                    <form method="post" class="checkout-form">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" class="checkout-full-width" required><br>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" id="email" class="checkout-full-width" required><br>
+                        <label for="street">Street Address</label><br>
+                        <input type="text" name="street" id="street" class="checkout-full-width" required><br>
+                        <div class="address-city">
+                            <div class="address-part">
+                                <label for="city">City</label><br>
+                                <input type="text" name="city" id="city" required>
+                            </div>
+                            <div class="address-part">
+                                <label for="state">State</label><br>
+                                <select name="state" id="state" required>
+                                    <option value="">&nbsp;</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AR">AR</option>	
+                                    <option value="AZ">AZ</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CT">CT</option>
+                                    <option value="DC">DC</option>
+                                    <option value="DE">DE</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="HI">HI</option>
+                                    <option value="IA">IA</option>	
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MD">MD</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MO">MO</option>	
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NC">NC</option>	
+                                    <option value="NE">NE</option>
+                                    <option value="NH">NH</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>			
+                                    <option value="NV">NV</option>
+                                    <option value="NY">NY</option>
+                                    <option value="ND">ND</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RI">RI</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VT">VT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WI">WI</option>	
+                                    <option value="WV">WV</option>
+                                    <option value="WY">WY</option>
+                                </select>
+                            </div>
+                            <div class="address-zip">
+                                <label for="zip-code">Zip Code</label><br>
+                                <input type="text" name="zipCode" id="zip-code" pattern="[0-9]*" required>
+                            </div>
+                        </div>
+
+                        <label for="firstTime">First Time Adopter?</label>
+                        <fieldset>
+                            <label class="radio-container">
+                                <input type="radio" name="firstTime" class="radio" value="personal" required>
+                                <span class="radio-button"></span>
+                                Yes
+                            </label>
+                            <label class="radio-container">
+                                <input type="radio" name="firstTime" class="radio" value="buisness">
+                                <span class="radio-button"></span>
+                                No
+                            </label>
+                        </fieldset>
+    
+                        <label for="pickup">Pickup Location</label><br>
+                        <select name="pickup" id="pickup" required>
                             <option value="">&nbsp;</option>
-                            <option value="AL">AL</option>
-                            <option value="AK">AK</option>
-                            <option value="AR">AR</option>	
-                            <option value="AZ">AZ</option>
-                            <option value="CA">CA</option>
-                            <option value="CO">CO</option>
-                            <option value="CT">CT</option>
-                            <option value="DC">DC</option>
-                            <option value="DE">DE</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="HI">HI</option>
-                            <option value="IA">IA</option>	
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="MA">MA</option>
-                            <option value="MD">MD</option>
-                            <option value="ME">ME</option>
-                            <option value="MI">MI</option>
-                            <option value="MN">MN</option>
-                            <option value="MO">MO</option>	
-                            <option value="MS">MS</option>
-                            <option value="MT">MT</option>
-                            <option value="NC">NC</option>	
-                            <option value="NE">NE</option>
-                            <option value="NH">NH</option>
-                            <option value="NJ">NJ</option>
-                            <option value="NM">NM</option>			
-                            <option value="NV">NV</option>
-                            <option value="NY">NY</option>
-                            <option value="ND">ND</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="OR">OR</option>
-                            <option value="PA">PA</option>
-                            <option value="RI">RI</option>
-                            <option value="SC">SC</option>
-                            <option value="SD">SD</option>
-                            <option value="TN">TN</option>
-                            <option value="TX">TX</option>
-                            <option value="UT">UT</option>
-                            <option value="VT">VT</option>
-                            <option value="VA">VA</option>
-                            <option value="WA">WA</option>
-                            <option value="WI">WI</option>	
-                            <option value="WV">WV</option>
-                            <option value="WY">WY</option>
+                            <option value="1">Location 1</option>
+                            <option value="2">Location 2</option>
+                            <option value="3">Location 3</option>
                         </select>
-                        <label for="zip-code">Zip Code</label>
-                        <input type="text" name="zipCode" id="zip-code" pattern="[0-9]*" required>
-                    </div>
-                    <label for="pickup">Pickup Location</label>
-                    <fieldset>
-                        <legend>First Time Adopter?</legend>
-                        <label class="radio-container">
-                            <input type="radio" name="firstTime" class="radio" value="personal" required>
-                            <span class="radio-button"></span>
-                            Yes
-                        </label>
-                        <label class="radio-container">
-                            <input type="radio" name="firstTime" class="radio" value="buisness">
-                            <span class="radio-button"></span>
-                            No
-                        </label>
-                    </fieldset>
-
-                    <label for="pickup">Pickup Location</label>
-                    <select name="pickup" id="pickup" required>
-                        <option value="">&nbsp;</option>
-                        <option value="1">Location 1</option>
-                        <option value="2">Location 2</option>
-                        <option value="3">Location 3</option>
-                    </select>
-
-                    <section class="adopted">
-                        <h2>Dogs Adopted</h2>
-                        <article class="dog">
-                            <img src="images/lucas-checkout.jpg" alt="Lukas, looking up the the camera">
-                            <h3>Lucas</h3>
-                            <p><strong>Cost to Adopt: </strong> $123.45</p>
-                        </article>
-                        <article class="dog">
-                            <img src="images/duffy-checkout.jpg" alt="Duffy, sitting in grass">
-                            <h3>Duffy</h3>
-                            <p><strong>Cost to Adopt: </strong> $123.45</p>
-                        </article>
-                    </section>
-
-                    <section class="total">
-                        <h2>Total Adoption Cost</h2>
-                        <p>$1234.56</p>
-                    </section>
-
-                    <input type="submit" value="send">
-                </form>
+    
+                        <section class="adopted">
+                            <h2>Dogs Adopted</h2>
+                            <article class="dog-adopted">
+                                <img src="images/lucas-checkout.jpg" alt="Lukas, looking up the the camera">
+                                <h3>Lucas</h3>
+                                <p><strong>Cost to Adopt: </strong> $123.45</p>
+                            </article>
+                            <article class="dog-adopted">
+                                <img src="images/duffy-checkout.jpg" alt="Duffy, sitting in grass">
+                                <h3>Duffy</h3>
+                                <p><strong>Cost to Adopt: </strong> $123.45</p>
+                            </article>
+                        </section>
+    
+                        <section class="total">
+                            <h2>Total Adoption Cost</h2>
+                            <p>$1234.56</p>
+                        </section>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
             <!-- End of Content -->
 
