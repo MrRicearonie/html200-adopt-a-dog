@@ -13,11 +13,11 @@ h2 {
 .blog-post {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 7rem;
+    margin-bottom: 48px;
 }
 
 .blog-post:last-of-type {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .blog-post img {
