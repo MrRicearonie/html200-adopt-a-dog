@@ -1,0 +1,34 @@
+h1 {
+    color: #093c60;
+    margin: 2.2rem 0;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #093c60;
+    margin-top: 0;
+    font-size: 1.75rem;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.blog-post:last-of-type {
+    margin-bottom: 32px;
+}
+
+.blog-post img {
+    margin: auto 5% auto 0;
+    width: 20rem;
+}
+
+.blog-text {
+    width: 60%;
+}
+
+.blog-text p {
+    font-size: 1.1rem;
+}

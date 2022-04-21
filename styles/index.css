@@ -1,0 +1,36 @@
+h1 {
+  color: #093c60;  
+}
+
+.homepage-intro {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homepage-intro img {
+    margin: auto 0;
+}
+
+.spacer {
+    width: 5%;
+}
+
+.intro-text {
+    color: #3d3d3d;
+    max-width: 50%;
+    min-width: 20%;
+    font-size: 1.25rem;
+}
+
+.more-btn-wrapper {
+    margin-top: 1.5rem;
+}
+
+.more-btn {
+    color: #093c60;
+    background-color: #ececec;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0.75rem 3rem;
+}

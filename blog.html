@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Blog | ADOPTADOG</title>
+        <link rel="stylesheet" type="text/css" href="styles/shared.css">
+        <link rel="stylesheet" type="text/css" href="styles/blog.css">
     </head>
     <body>
 
@@ -18,65 +20,77 @@
                     <p>Seattle's premiere dog adoption agency</p>
                 </div>
                 <div class="header-cart">
-                    <img src="images/cart-icon.svg" height="50" width="50" alt="Shopping cart">
-                    <p class="total-price">$1234.56</p>
-                    <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+                    <div class="cart-cost">
+                        <img src="images/cart-icon.svg" height="50" width="50" alt="Shopping cart">
+                        <p class="total-price">$1234.56</p>
+                    </div>
+                    <div class="header-btn-div">
+                        <a href="checkout.html" class="btn checkout-btn">Checkout</a>
+                    </div>
                 </div>
             </header>
             <!-- Header End -->
 
             <!-- Nav Start -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dogs.html">Dogs</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+            <nav class="flex">
+                <ul class="fit-content">
+                    <li><p><a href="index.html">Home</a> &#x2f;</p></li>
+                    <li><p><a href="dogs.html">Dogs</a> &#x2f;</p></li>
+                    <li><p><a href="blog.html">Blog</a></p></li>
                 </ul>
             </nav>
             <!-- Nav End -->
 
             <!-- Start of Content -->
-            <div class="content">
-                <section class="blog-posts">
+            <div class="flex">
+                <section class="blog-posts fit-content">
                     <h1>Adoptadog Blog</h1>
                     <article class="blog-post">
                         <img src="images/blog-1.jpg" alt="Woman with dog at the Grand Canyon">
-                        <h2>Traveling With Your Dog</h2>
-                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
-                            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-                            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
-                            qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        <div class="blog-text">
+                            <h2>Traveling With Your Dog</h2>
+                            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
+                                hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. <br><br>
+                                Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
+                                qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        </div>
                     </article>
                     <article class="blog-post">
                         <img src="images/blog-2.jpg" alt="4 dogs on leaches sitting at a city park">
-                        <h2>How To Walk Multiple Dogs</h2>
-                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
-                            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-                            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
-                            qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        <div class="blog-text">
+                            <h2>How To Walk Multiple Dogs</h2>
+                            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
+                                hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. <br><br>
+                                Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
+                                qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        </div>
                     </article>
                     <article class="blog-post">
                         <img src="images/blog-3.jpg" alt="Woman holding ball above a dog's head at dusk">
-                        <h2>Teach Your Dog To Fetch!</h2>
-                        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
-                            hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.
-                            Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
-                            qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        <div class="blog-text">
+                            <h2>Teach Your Dog To Fetch!</h2>
+                            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium 
+                                hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. <br><br>
+                                Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad 
+                                qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
+                        </div>
                     </article>
                 </section>
             </div>
             <!-- End of Content-->
 
             <!-- Footer Start -->
-            <footer>
-                <img src="images/adoptadog-logo.svg" alt="Adopt a Dog's logo">
-                <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="dogs.html">Dogs</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-                <p>&copy;2022 Adoptadog, LLC | Seattle, WA</p>
+            <footer class="flex">
+                <div>
+                    <img src="images/adoptadog-logo.svg" alt="Adopt a Dog's logo">
+                    <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+                    <ul class="footer-links">
+                        <li><p><a href="index.html">Home</a> &#x2f;</p></li>
+                        <li><p><a href="dogs.html">Dogs</a> &#x2f;</p></li>
+                        <li><p><a href="blog.html">Blog</a></p></li>
+                    </ul>
+                    <p>&copy;2022 Adoptadog, LLC | Seattle, WA</p>
+                </div>
             </footer>
             <!-- Footer End -->
         </div>
