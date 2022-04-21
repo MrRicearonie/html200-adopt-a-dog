@@ -39,6 +39,7 @@ header {
 }
 
 .header-continer {
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -93,6 +94,7 @@ header {
 }
 
 .motto {
+    max-width: 1500px;
     color: #81b741;
     font-size: 2rem;
     font-style: italic;
