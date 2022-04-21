@@ -140,13 +140,14 @@ nav a {
 .homepage-dogs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 1.25rem;
 }
 
 .dog {
-    width: 16rem;
+    width: 17rem;
     box-shadow: 0 0 5px gray;
-    margin: 1.5rem 0.8rem;
+    margin: 1.5rem 0;
 }
 
 .dog img {
@@ -170,6 +171,7 @@ nav a {
     height: 2.5rem;
     font-size: 1.1rem;
     border-radius: 2px;
+    margin-top: 2.5%;
     margin-bottom: 5%;
 }
 
