@@ -133,7 +133,7 @@ fieldset {
     border: none;
     display: flex;
     justify-content: space-between;
-    width: 12rem;
+    width: fit-content;
     padding-left: 0;
     margin-bottom: 16px;
 }

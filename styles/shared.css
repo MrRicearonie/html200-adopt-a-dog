@@ -32,26 +32,20 @@ body {
 /* -=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=- */
 
 header {
-    height: 18rem;
-    padding: 3rem 5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    min-height: 18rem;
+    max-height: fit-content;
+    padding: 3rem 6% 0;
     background-color: #093c60;
 }
 
-.header-logo {
-    /* width: 50%; */
-    height: 80%;
-    color: #81b741;
+.header-continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.header-logo p {
-    font-size: 2rem;
-    font-style: italic;
-    margin-top: 0;
-    position: relative;
-    top: -1rem;
+.header-logo {
+    width: 50%;
 }
 
 .header-logo img {
@@ -96,6 +90,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.motto {
+    color: #81b741;
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 0;
+    position: relative;
+    top: -1rem;
 }
 
 /* -=-=-=-=-=-=-=-=-=- NAV -=-=-=-=-=-=-=-=-=- */
@@ -167,7 +170,8 @@ nav a {
 
 footer {
     background-color: #3d3d3d;
-    height: 50vh;
+    min-height: 50vh;
+    max-height: fit-content;
     margin-top: 10vh;
     align-items: center;
     color: white;
@@ -180,6 +184,7 @@ footer div {
 
 footer img {
     height: 13vh;
+    width: 100%;
 }
 
 footer a {
