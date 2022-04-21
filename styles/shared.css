@@ -32,14 +32,19 @@ body {
 /* -=-=-=-=-=-=-=-=- HEADER -=-=-=-=-=-=-=-=- */
 
 header {
-    min-height: 18rem;
-    max-height: fit-content;
+    height: fit-content;
     padding: 3rem 6% 0;
     background-color: #093c60;
+    display: flex;
+    justify-content: center;
 }
 
-.header-continer {
+.header-container {
     max-width: 1500px;
+    width: 100%;
+}
+
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
