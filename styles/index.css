@@ -20,7 +20,11 @@ h1 {
 
 .intro-text {
     color: #3d3d3d;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.intro-text p {
+    margin-top: 0.75rem;
 }
 
 .more-btn-wrapper {
@@ -41,10 +45,12 @@ h1 {
     grid-template-rows: auto auto;
     justify-content: space-between;
     grid-gap: 3rem;
+    row-gap: 0.5rem;
 }
 
 .dog {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* Blog Posts */
@@ -54,13 +60,42 @@ h1 {
     padding-left: 3rem;
 }
 
+.blog-preview article:not(:first-of-type) {
+    margin-top: 6rem;
+}
+
 .blog-preview h2 {
     color: #093c60;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .blog-preview img {
     width: 100%;
+    margin-bottom: 0;
+}
+
+.blog-preview h3 {
+    color: #093c60;
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
+}
+
+.blog-preview p {
+    color: #3d3d3d;
+    font-size: 1.3rem;
+    margin: 0.5rem 0 1.25rem;
+}
+
+.blog-preview a {
+    text-decoration: none;
+}
+
+.read-more {
+    color: #239ab9;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5.25rem;
 }
 
 /* Screen Sizes */
