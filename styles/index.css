@@ -111,6 +111,10 @@ h1 {
     .dog-list {
         grid-template-columns: auto;
     }
+
+    .more-btn {
+        font-size: 1.25rem;
+    }
 }
 
 /* Tablet */
