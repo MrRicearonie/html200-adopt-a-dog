@@ -33,8 +33,13 @@ body {
 
 header {
     height: fit-content;
+    min-height: 45vh;
     padding: 3rem 6% 0;
-    background-color: #093c60;
+    background: rgb(9,60,96);
+    background: linear-gradient(175deg, rgba(129,183,65,1) 0%, rgba(9,60,96,1) 40%);
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+    
     display: flex;
     justify-content: center;
 }
@@ -175,7 +180,7 @@ nav a {
 /* -=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=- */
 
 footer {
-    background-color: #3d3d3d;
+    background-color: #093c60;
     min-height: 49vh;
     max-height: fit-content;
     margin-top: 5.5rem;
@@ -247,8 +252,19 @@ footer a {
     }
 }
 
+/* Small (Phones) */
+@media screen and (max-width: 768px) {
+    header {
+        min-height: 30vh;
+    }
+}
+
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        min-height: 37.5vh;
+    }
+
     .header-cart a {
         padding: 0.15rem 2rem;
     }
