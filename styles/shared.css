@@ -39,7 +39,7 @@ header {
     background: linear-gradient(175deg, rgba(129,183,65,1) 0%, rgba(9,60,96,1) 40%);
     background-image: url('../images/header-image.jpg');
     background-size: cover;
-    
+
     display: flex;
     justify-content: center;
 }
@@ -144,9 +144,10 @@ nav a {
 /* =-=-=-=-=-=-=-=- DOG CARDS -=-=-=-=-=-=-=-= */
 
 .dog {
-    width: 17rem;
+    width: 100%;
+    margin-bottom: 1rem;
     box-shadow: 0 0 5px gray;
-    margin: 1.5rem 0;
+    border-radius: 2px;
 }
 
 .dog p {
