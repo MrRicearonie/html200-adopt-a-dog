@@ -104,6 +104,10 @@ h1 {
 
 /* Small (Phones) */
 @media screen and (max-width: 768px) {
+    .home-page {
+        width: 100vw;
+    }
+
     .blog-preview {
         display: none;
     }
