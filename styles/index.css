@@ -16,6 +16,13 @@ h1 {
 .homepage-intro img {
     margin: auto 0;
     max-width: 100%;
+<<<<<<< HEAD
+=======
+}
+
+.spacer {
+    width: 5%;
+>>>>>>> master
 }
 
 .intro-text {
