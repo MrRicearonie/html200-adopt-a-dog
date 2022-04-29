@@ -11,13 +11,14 @@ h2 {
 }
 
 .blog-post {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5rem;
     margin-bottom: 48px;
 }
 
 .blog-post:last-of-type {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .blog-post img {
@@ -26,9 +27,23 @@ h2 {
 }
 
 .blog-text {
-    width: 60%;
+    max-width: 40.625rem;
+    width: 100%;
 }
 
 .blog-text p {
     font-size: 1.1rem;
+}
+
+/* Custom for switching template direction */
+@media screen and (max-width: 930px) {
+    .blog-post {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 2rem;
+    }
+
+    .blog-post:not(:last-of-type) {
+        margin-bottom: 6rem;
+    }
 }
