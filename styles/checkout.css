@@ -102,6 +102,7 @@ input[type="submit"] {
     grid-template-columns: 5rem 1rem auto;
     grid-template-rows: 1rem 1rem auto;
     width: 20rem;
+    margin: 20px 0;
 }
 
 .dog-adopted img {
@@ -124,7 +125,7 @@ input[type="submit"] {
 }
 
 .total {
-    margin-top: 38px;
+    margin-top: 18px;
 }
 
 /* -=-=-=-=-=-=-= Radio Btns =-=-=-=-=-=-=- */
@@ -195,4 +196,38 @@ fieldset {
     height: 8px;
     border-radius: 50%;
     background: white;
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .checkout-full-width {
+        width: 80%;
+    }
+}
+
+/* Small (Phones) */
+@media screen and (min-width: 429px) and (max-width: 768px) {
+    .checkout-full-width {
+        width: 100%;
+    }
+
+    .address-city {
+        width: 100%;
+    }
+}
+
+/* Extra Small (Phones like iPhone 13 Mini) */
+@media screen and (max-width: 428px) {
+    .checkout-full-width {
+        width: 100%;
+    }
+
+    .address-city {
+        width: 100%;
+    }
+
+    label,
+    legend {
+        font-size: 1rem;
+    }
 }

@@ -16,13 +16,6 @@ h1 {
 .homepage-intro img {
     margin: auto 0;
     max-width: 100%;
-<<<<<<< HEAD
-=======
-}
-
-.spacer {
-    width: 5%;
->>>>>>> master
 }
 
 .intro-text {
@@ -111,6 +104,10 @@ h1 {
 
 /* Small (Phones) */
 @media screen and (max-width: 768px) {
+    .home-page {
+        width: 100vw;
+    }
+
     .blog-preview {
         display: none;
     }

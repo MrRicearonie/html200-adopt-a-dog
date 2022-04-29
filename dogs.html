@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="theme-color" content="#093c60">
         <link rel="shortcut icon" href="images/favicon.png">
         <title>The Dogs | ADOPTADOG</title>
         <link rel="stylesheet" type="text/css" href="styles/shared.css">
@@ -51,127 +52,129 @@
             <!-- Start of flex box -->
             <div class="flex">
                 <!-- Start of Dog Cards -->
-                <section class="homepage-dogs fit-content">
+                <div class="fit-content">
                     <h1 class="dogs-title">Here are all of our Dogs!</h1>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Murphy','Mixed-breed',123.45)" src="images/murphy-card.jpg" alt="A sad dog">
-                        <div class="about-dog">
-                            <h3>Murphy</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Poppy','Havanese',123.45)" src="images/poppy-card.jpg"
-                            alt="A happy dog running down a road">
-                        <div class="about-dog">
-                            <h3>Poppy</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Jack','Beagle',123.45)" src="images/jack-card.jpg" alt="A dog looking up to the left">
-                        <div class="about-dog">
-                            <h3>Jack</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Duffy','Pitbull',123.45)" src="images/duffy-card.jpg" alt="A dog in the grass">
-                        <div class="about-dog">
-                            <h3>Duffy</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Lucas','Mixed-breed',123.45)" src="images/lucas-card.jpg"
-                            alt="A dog looking up into the camera">
-                        <div class="about-dog">
-                            <h3>Lucas</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Jake','Yellow Lab',123.45)" src="images/jake-card.jpg" alt="A dog on the beach">
-                        <div class="about-dog">
-                            <h3>Jake</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Angus','Boxer',123.45)" src="images/angus-card.jpg" alt="A happy dog in grass">
-                        <div class="about-dog">
-                            <h3>Angus</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Violet','Chocolate Lab',123.45)" src="images/violet-card.jpg" alt="A puppy">
-                        <div class="about-dog">
-                            <h3>Violet</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
-                                doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Piper','Duck Trolling Retreiver',123.45)" src="images/piper-card.jpg" alt="A happy dog in a meadow">
-                        <div class="about-dog">
-                            <h3>Piper</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Maximus','Russell Terrier',123.45)" src="images/maximus-card.jpg" alt="A dog on textured concrete">
-                        <div class="about-dog">
-                            <h3>Maximus</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Luna','Golden Retreiver',123.45)" src="images/luna-card.jpg" alt="An extreamly relaxed, happy dog in truck bed">
-                        <div class="about-dog">
-                            <h3>Luna</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                    <article class="dog">
-                        <img onclick="alertDogInfo('Stella','Russian Toy',123.45)" src="images/stella-card.jpg" alt="A small dog napping on a couch">
-                        <div class="about-dog">
-                            <h3>Stella</h3>
-                            <p><strong>Cost to Adopt: </strong>$123.45</p>
-                            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-                            <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
-                        </div>
-                    </article>
-                </section>
+                    <section class="homepage-dogs fit-content">
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Murphy','Mixed-breed',123.45)" src="images/murphy-card.jpg" alt="A sad dog">
+                            <div class="about-dog">
+                                <h3>Murphy</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Poppy','Havanese',123.45)" src="images/poppy-card.jpg"
+                                alt="A happy dog running down a road">
+                            <div class="about-dog">
+                                <h3>Poppy</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Jack','Beagle',123.45)" src="images/jack-card.jpg" alt="A dog looking up to the left">
+                            <div class="about-dog">
+                                <h3>Jack</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Duffy','Pitbull',123.45)" src="images/duffy-card.jpg" alt="A dog in the grass">
+                            <div class="about-dog">
+                                <h3>Duffy</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Lucas','Mixed-breed',123.45)" src="images/lucas-card.jpg"
+                                alt="A dog looking up into the camera">
+                            <div class="about-dog">
+                                <h3>Lucas</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Jake','Yellow Lab',123.45)" src="images/jake-card.jpg" alt="A dog on the beach">
+                            <div class="about-dog">
+                                <h3>Jake</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Angus','Boxer',123.45)" src="images/angus-card.jpg" alt="A happy dog in grass">
+                            <div class="about-dog">
+                                <h3>Angus</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Violet','Chocolate Lab',123.45)" src="images/violet-card.jpg" alt="A puppy">
+                            <div class="about-dog">
+                                <h3>Violet</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui
+                                    doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Piper','Duck Trolling Retreiver',123.45)" src="images/piper-card.jpg" alt="A happy dog in a meadow">
+                            <div class="about-dog">
+                                <h3>Piper</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Maximus','Russell Terrier',123.45)" src="images/maximus-card.jpg" alt="A dog on textured concrete">
+                            <div class="about-dog">
+                                <h3>Maximus</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Luna','Golden Retreiver',123.45)" src="images/luna-card.jpg" alt="An extreamly relaxed, happy dog in truck bed">
+                            <div class="about-dog">
+                                <h3>Luna</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                        <article class="dog">
+                            <img onclick="alertDogInfo('Stella','Russian Toy',123.45)" src="images/stella-card.jpg" alt="A small dog napping on a couch">
+                            <div class="about-dog">
+                                <h3>Stella</h3>
+                                <p><strong>Cost to Adopt: </strong>$123.45</p>
+                                <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
+                                <button onclick="addDog(123.45)" class="btn adopt-btn">Adopt</button>
+                            </div>
+                        </article>
+                    </section>
+                </div>
                 <!-- End of Dog Cards -->
             </div>
             <!-- End of Content -->

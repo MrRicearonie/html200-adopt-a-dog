@@ -33,8 +33,13 @@ body {
 
 header {
     height: fit-content;
+    min-height: 45vh;
     padding: 3rem 6% 0;
-    background-color: #093c60;
+    background: rgb(9,60,96);
+    background: linear-gradient(175deg, rgba(129,183,65,1) 0%, rgba(9,60,96,1) 40%);
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+
     display: flex;
     justify-content: center;
 }
@@ -138,28 +143,15 @@ nav a {
 
 /* =-=-=-=-=-=-=-=- DOG CARDS -=-=-=-=-=-=-=-= */
 
-<<<<<<< HEAD
 .dog {
-    width: 17rem;
+    width: 100%;
+    margin-bottom: 1rem;
     box-shadow: 0 0 5px gray;
-    margin: 1.5rem 0;
+    border-radius: 2px;
 }
 
 .dog p {
     color: #3d3d3d;
-=======
-.homepage-dogs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.25rem;
-}
-
-.dog {
-    width: 17rem;
-    box-shadow: 0 0 5px gray;
-    margin: 1.5rem 0;
->>>>>>> master
 }
 
 .dog img {
@@ -189,16 +181,10 @@ nav a {
 /* -=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=- */
 
 footer {
-    background-color: #3d3d3d;
-<<<<<<< HEAD
+    background-color: #093c60;
     min-height: 49vh;
     max-height: fit-content;
     margin-top: 5.5rem;
-=======
-    min-height: 50vh;
-    max-height: fit-content;
-    margin-top: 10vh;
->>>>>>> master
     align-items: center;
     color: white;
     padding-top: 1rem;
@@ -218,7 +204,6 @@ footer a {
     text-decoration: none;
     color: white;
 }
-<<<<<<< HEAD
 
 /* -=-=-=-=-=-=-= Screen Sizes =-=-=-=-=-=-=- */
 
@@ -268,8 +253,19 @@ footer a {
     }
 }
 
+/* Small (Phones) */
+@media screen and (max-width: 768px) {
+    header {
+        min-height: 30vh;
+    }
+}
+
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        min-height: 37.5vh;
+    }
+
     .header-cart a {
         padding: 0.15rem 2rem;
     }
@@ -279,5 +275,3 @@ footer a {
         margin-top: 0.5rem;
     }
 }
-=======
->>>>>>> master
