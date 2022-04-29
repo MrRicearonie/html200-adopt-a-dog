@@ -10,7 +10,8 @@ h2 {
 
 /* -=-=-=-=-=-=-=- Forms -=-=-=-=-=-=-=- */
 
-label {
+label,
+legend {
     color: #093c60;
     font-size: 1.4rem;
 } 
@@ -132,7 +133,7 @@ fieldset {
     border: none;
     display: flex;
     justify-content: space-between;
-    width: 12rem;
+    width: fit-content;
     padding-left: 0;
     margin-bottom: 16px;
 }
