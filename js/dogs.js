@@ -1,7 +1,6 @@
 /* eslint-disable no-alert */
 let total = 0;
 let display = 0;
-const dogArea = document.querySelector('#dogs');
 
 // List of all the dogs
 const dogs = [{
@@ -91,57 +90,62 @@ const dogs = [{
 },
 ];
 
-// If title is ADOPTADOG, then on homepage and only show up to 6
-if (document.title === 'ADOPTADOG' && dogs.length >= 6) {
-  display = 6;
-} else {
-  display = dogs.length;
-}
+// If we are not on the checkout page, add dogs
+if (document.title !== 'Checkout | ADOPTADOG') {
+  const dogArea = document.querySelector('#dogs');
 
-for (let i = 0; i < display; i += 1) {
-  const dog = dogs[i];
+  // If title is ADOPTADOG, then on homepage and only show up to 6
+  if (document.title === 'ADOPTADOG' && dogs.length >= 6) {
+    display = 6;
+  } else {
+    display = dogs.length;
+  }
 
-  // Set up the article for the dog card
-  const article = document.createElement('article');
-  article.setAttribute('class', 'dog');
+  for (let i = 0; i < display; i += 1) {
+    const dog = dogs[i];
 
-  // Set up img
-  const img = document.createElement('img');
-  img.setAttribute('onclick', `alertDogInfo('${dog.name}', '${dog.breed}', '${dog.cost}')`);
-  img.setAttribute('src', dog.img);
-  img.setAttribute('alt', dog.imgAlt);
+    // Set up the article for the dog card
+    const article = document.createElement('article');
+    article.setAttribute('class', 'dog');
 
-  // Set up dog info
-  const about = document.createElement('div');
-  about.setAttribute('class', 'about-dog');
+    // Set up img
+    const img = document.createElement('img');
+    img.setAttribute('onclick', `alertDogInfo('${dog.name}', '${dog.breed}', '${dog.cost}')`);
+    img.setAttribute('src', dog.img);
+    img.setAttribute('alt', dog.imgAlt);
 
-  // Set up dog name
-  const name = document.createElement('h3');
-  name.innerText = dog.name;
+    // Set up dog info
+    const about = document.createElement('div');
+    about.setAttribute('class', 'about-dog');
 
-  // Set up cost
-  const cost = document.createElement('p');
-  const costText = `<strong>Cost to Adopt: $${dog.cost}`;
-  cost.innerHTML = costText;
+    // Set up dog name
+    const name = document.createElement('h3');
+    name.innerText = dog.name;
 
-  // Set up description
-  const desc = document.createElement('p');
-  desc.innerHTML = dog.desc;
+    // Set up cost
+    const cost = document.createElement('p');
+    const costText = `<strong>Cost to Adopt: $${dog.cost}`;
+    cost.innerHTML = costText;
 
-  // Set up button
-  const btn = document.createElement('button');
-  btn.setAttribute('class', 'btn adopt-btn');
-  btn.setAttribute('onclick', `addDog('${dog.cost}')`);
-  btn.innerText = 'Adopt';
+    // Set up description
+    const desc = document.createElement('p');
+    desc.innerHTML = dog.desc;
 
-  // Add card to page
-  dogArea.appendChild(article);
-  article.appendChild(img);
-  article.appendChild(about);
-  about.appendChild(name);
-  about.appendChild(cost);
-  about.appendChild(desc);
-  about.appendChild(btn);
+    // Set up button
+    const btn = document.createElement('button');
+    btn.setAttribute('class', 'btn adopt-btn');
+    btn.setAttribute('onclick', `addDog('${dog.cost}')`);
+    btn.innerText = 'Adopt';
+
+    // Add card to page
+    dogArea.appendChild(article);
+    article.appendChild(img);
+    article.appendChild(about);
+    about.appendChild(name);
+    about.appendChild(cost);
+    about.appendChild(desc);
+    about.appendChild(btn);
+  }
 }
 
 // eslint-disable-next-line no-unused-vars
