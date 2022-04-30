@@ -91,7 +91,8 @@ const dogs = [{
 },
 ];
 
-if (document.title === 'ADOPTADOG') {
+// If title is ADOPTADOG, then on homepage and only show up to 6
+if (document.title === 'ADOPTADOG' && dogs.length >= 6) {
   display = 6;
 } else {
   display = dogs.length;
@@ -106,7 +107,7 @@ for (let i = 0; i < display; i += 1) {
 
   // Set up img
   const img = document.createElement('img');
-  img.setAttribute('onclick', `alertDogInfo(${dog.name}, ${dog.breed}, ${dog.cost})`);
+  img.setAttribute('onclick', `alertDogInfo('${dog.name}', '${dog.breed}', '${dog.cost}')`);
   img.setAttribute('src', dog.img);
   img.setAttribute('alt', dog.imgAlt);
 
@@ -130,6 +131,7 @@ for (let i = 0; i < display; i += 1) {
   // Set up button
   const btn = document.createElement('button');
   btn.setAttribute('class', 'btn adopt-btn');
+  btn.setAttribute('onclick', `addDog('${dog.cost}')`);
   btn.innerText = 'Adopt';
 
   // Add card to page
