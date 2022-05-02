@@ -158,6 +158,8 @@ function alertDogInfo(name, breed, price) {
 function addDog(price) {
   total += Number(price);
   alert(`Your total is now: $${total.toFixed(2)}`);
+  // totalPrice comes from the shared.js script
+  totalPrice.text(`$${total.toFixed(2)}`);
 }
 
 $('.dog').mouseenter(function () {
