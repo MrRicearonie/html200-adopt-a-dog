@@ -1,41 +1,54 @@
-const form = document.getElementById('checkout');
-const firstTime = document.querySelectorAll('input[name="firstTime"]');
-const formInput = {
-  name: '',
-  email: '',
-  street: '',
-  city: '',
-  state: '',
-  zip: '',
-  new: '',
-  location: '',
-};
+/* eslint-disable no-undef */
 
-form.addEventListener('submit', (event) => {
-  // Stop the form subitting
-  event.preventDefault();
-  formInput.name = form.elements[0].value;
-  formInput.email = form.elements[1].value;
-  formInput.street = form.elements[2].value;
-  formInput.city = form.elements[3].value;
-  formInput.state = form.elements[4].value;
-  formInput.zip = form.elements[5].value;
-  if (firstTime[0].checked) {
-    formInput.new = 'Yes';
-  } else {
-    formInput.new = 'No';
-  }
+/* JavaScript form handling */
+// const form = document.getElementById('checkout');
+// const firstTime = document.querySelectorAll('input[name="firstTime"]');
+// const formInput = {
+//   name: '',
+//   email: '',
+//   street: '',
+//   city: '',
+//   state: '',
+//   zip: '',
+//   new: '',
+//   location: '',
+// };
 
-  formInput.location = document.querySelector('#pickup').value;
+// form.addEventListener('submit', (event) => {
+//   // Stop the form submitting
+//   event.preventDefault();
+//   formInput.name = form.elements[0].value;
+//   formInput.email = form.elements[1].value;
+//   formInput.street = form.elements[2].value;
+//   formInput.city = form.elements[3].value;
+//   formInput.state = form.elements[4].value;
+//   formInput.zip = form.elements[5].value;
+//   if (firstTime[0].checked) {
+//     formInput.new = 'Yes';
+//   } else {
+//     formInput.new = 'No';
+//   }
 
-  console.log(`Name: ${formInput.name}`);
-  console.log(`Email: ${formInput.email}`);
-  console.log(`Street Address: ${formInput.street}`);
-  console.log(`City: ${formInput.city}`);
-  console.log(`State: ${formInput.state}`);
-  console.log(`Zip: ${formInput.zip}`);
-  console.log(`First Time?: ${formInput.new}`);
-  console.log(`Pick up location: ${formInput.location}`);
+//   formInput.location = document.querySelector('#pickup').value;
 
-  alert('Thank you. The form information has been received');
+//   console.log(`Name: ${formInput.name}`);
+//   console.log(`Email: ${formInput.email}`);
+//   console.log(`Street Address: ${formInput.street}`);
+//   console.log(`City: ${formInput.city}`);
+//   console.log(`State: ${formInput.state}`);
+//   console.log(`Zip: ${formInput.zip}`);
+//   console.log(`First Time?: ${formInput.new}`);
+//   console.log(`Pick up location: ${formInput.location}`);
+
+//   alert('Thank you. The form information has been received');
+// });
+
+/* jQuery form handling */
+$(document).ready(() => {
+  $('form').submit((e) => {
+    e.preventDefault();
+    const formInput = $('form').serializeArray();
+    console.log(formInput);
+    alert('Thank you. The form information has been received');
+  });
 });

@@ -149,11 +149,13 @@ if (document.title !== 'Checkout | ADOPTADOG') {
   }
 }
 
+/* Alert the user about dog when image is clicked */
 // eslint-disable-next-line no-unused-vars
 function alertDogInfo(name, breed, price) {
   alert(`Hi! I'm ${name}\nI am a ${breed}\nAnd I cost $${price} to adopt`);
 }
 
+/* Let the user know how much the cart costs, update header */
 // eslint-disable-next-line no-unused-vars
 function addDog(price) {
   total += Number(price);
@@ -162,21 +164,26 @@ function addDog(price) {
   totalPrice.text(`$${total.toFixed(2)}`);
 }
 
-$('.dog').mouseenter(function () {
-  $(this).addClass('in-focus');
-  $('.adopt-btn', this).addClass('in-focus-adopt');
-}).mouseleave(function () {
-  $(this).removeClass('in-focus');
-  $('.adopt-btn', this).removeClass('in-focus-adopt');
-});
+$(document).ready(() => {
+  /* When mouse enters dog card, scale it and scale adopt button */
+  $('.dog').mouseenter(function () {
+    $(this).addClass('in-focus');
+    $('.adopt-btn', this).addClass('in-focus-adopt');
+  }).mouseleave(function () {
+    $(this).removeClass('in-focus');
+    $('.adopt-btn', this).removeClass('in-focus-adopt');
+  });
 
-$('.adopt-btn').mousedown(function () {
-  $(this).addClass('adopt-btn-clicked').css('border-radius', '25px');
-  $(this).parent().parent().addClass('adopt-btn-clicked-dog');
-}).mouseup(function () {
-  $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
-  $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
-}).mouseleave(function () {
-  $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
-  $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
+  /* When user click and holds over adopt, change color and border
+  radius of button, and change the dog card's shadow color */
+  $('.adopt-btn').mousedown(function () {
+    $(this).addClass('adopt-btn-clicked').css('border-radius', '25px');
+    $(this).parent().parent().addClass('adopt-btn-clicked-dog');
+  }).mouseup(function () {
+    $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
+    $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
+  }).mouseleave(function () {
+    $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
+    $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
+  });
 });
