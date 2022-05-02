@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-alert */
 let total = 0;
 let display = 0;
@@ -158,3 +159,22 @@ function addDog(price) {
   total += Number(price);
   alert(`Your total is now: $${total.toFixed(2)}`);
 }
+
+$('.dog').mouseenter(function () {
+  $(this).addClass('in-focus');
+  $('.adopt-btn', this).addClass('in-focus-adopt');
+}).mouseleave(function () {
+  $(this).removeClass('in-focus');
+  $('.adopt-btn', this).removeClass('in-focus-adopt');
+});
+
+$('.adopt-btn').mousedown(function () {
+  $(this).addClass('adopt-btn-clicked').css('border-radius', '25px');
+  $(this).parent().parent().addClass('adopt-btn-clicked-dog');
+}).mouseup(function () {
+  $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
+  $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
+}).mouseleave(function () {
+  $(this).removeClass('adopt-btn-clicked').css('border-radius', '2px');
+  $(this).parent().parent().removeClass('adopt-btn-clicked-dog');
+});

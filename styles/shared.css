@@ -145,9 +145,10 @@ nav a {
 
 .dog {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     box-shadow: 0 0 5px gray;
     border-radius: 2px;
+    transition: all 500ms;
 }
 
 .dog p {
@@ -156,6 +157,7 @@ nav a {
 
 .dog img {
     width: 100%;
+    cursor: pointer;
 }
 
 .about-dog {
@@ -176,6 +178,26 @@ nav a {
     border-radius: 2px;
     margin-top: 2.5%;
     margin-bottom: 5%;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.in-focus {
+    scale: 1.1;
+    box-shadow: 0 0 10px #81b741;
+}
+
+.in-focus-adopt {
+    scale: 1.05;
+    box-shadow: 0 0 5px gray;
+}
+
+.adopt-btn-clicked {
+    background-color: #658e33;
+}
+
+.adopt-btn-clicked-dog {
+    box-shadow: 0 0 10px #093c60;
 }
 
 /* -=-=-=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-=-=- */
