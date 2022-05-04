@@ -6,13 +6,16 @@ Adopt A Dog is the course project for UW's HTML5200 class. In this project, we c
 
 Adopt A Dog features a home page with 6 dogs and, if screen size allows, preview to the blog content. There is a page for all of the dogs that are avalible to adopt with a picture and some information about them. There is also a blog that contains blog posts about being a dog owner, aswell as a checkout page to adopt the dogs.
 
+
 ## Fonts Used
 ---
 Noto Sans: [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans)
 
+
 ## User Personas
 ---
 The user personas can be found here: [Persona 1](https://raw.githubusercontent.com/MrRicearonie/html200-adopt-a-dog/assignment10/testing/persona1.jpg), [Persona 2](https://raw.githubusercontent.com/MrRicearonie/html200-adopt-a-dog/assignment10/testing/persona2.jpg)
+
 
 ## Testing
 ---
