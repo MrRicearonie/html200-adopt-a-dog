@@ -18,21 +18,23 @@ The user personas can be found here: [Persona 1](https://raw.githubusercontent.c
 I wanted to test on the most devices I possible could. To do this I used a combination of the following:
 
 *Operating Systems*
-MacOS 12 (2022 MacBook Pro 14")
-Windows 10 (2018 Desktop with Ultrawide screen)
-Ubuntu (2018 Desktop with Ultrawide screen)
-iOS 15 (iPhone Xr)
-Android 11 (Nokia 2.3)
+| OS | Computer |
+| ------- | -------|
+| MacOS 12 | 2022 MacBook Pro 14"|
+| Windows 10 | 2018 Desktop with Ultrawide screen |
+| Ubuntu | 2018 Desktop with Ultrawide screen| 
+iOS 15 | iPhone Xr| 
+| Android 11 | Nokia 2.3| 
 
 *Browsers*
-Safari
-Chrome
-Firefox
-Edge
-Opera
-Brave
-iOS Safari
-Chrome for Android
+- Safari
+- Chrome
+- Firefox
+- Edge
+- Opera
+- Brave
+- iOS Safari
+- Chrome for Android
 
 In testing, everything worked as expected except for one alignment issue on iOS Safari, and one button didn't show a pointer for the cursor.
 
