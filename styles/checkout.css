@@ -83,6 +83,7 @@ input[type="submit"] {
     background-color: #81b741;
     color: white;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* -=-=-=-=-=-=-= Adopted =-=-=-=-=-=-=- */
