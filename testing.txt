@@ -17,6 +17,7 @@ Browsers tested
 - Chrome for Mac, Windows, Ubuntu (Linux), Android
 - Firefox for Mac, Windows, Ubuntu (Linux)
 - Edge for Mac, Windows
+- Opera for Mac, Windows
 - Brave for Mac, Windows
 
 
@@ -25,6 +26,7 @@ What was tested
 
 - Webpage load properly with the CSS and stylescripts
 - Images and logos displayed properly
+- The webpage looks nice, and content is neither too large nor too small
 - Nav links work properly
 - Dog cards and blog posts load correctly from the JavaScript
 - Click on a dog's image, its details appear
@@ -44,5 +46,4 @@ While testing on each device, I found that there was only a couple of things tha
 properly. On every device the submit form button did not have a cursor value set so it now has been
 changed to show a pointer when hovering over it to indicate that you can click it. The only other
 issue that was found is in iOS Safari, the drop down to select which state you live in is not
-correct. It is too short, and is aligned to the left and not centered like in every other browser.
-Honestly not sure how to fix that one.
+correct. It is aligned to the left and not centered like in every other browser when of same size.

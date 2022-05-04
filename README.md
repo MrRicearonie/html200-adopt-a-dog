@@ -30,6 +30,7 @@ Safari
 Chrome
 Firefox
 Edge
+Opera
 Brave
 iOS Safari
 Chrome for Android
