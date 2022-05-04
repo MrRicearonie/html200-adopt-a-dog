@@ -12,7 +12,7 @@ Noto Sans: [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans)
 
 ## User Personas
 ---
-The user personas can be found here:
+The user personas can be found here: [Persona 1](https://raw.githubusercontent.com/MrRicearonie/html200-adopt-a-dog/assignment10/testing/persona1.jpg), [Persona 2](https://raw.githubusercontent.com/MrRicearonie/html200-adopt-a-dog/assignment10/testing/persona2.jpg)
 
 ## Testing
 ---
@@ -35,6 +35,6 @@ Brave
 iOS Safari
 Chrome for Android
 
-In testing, everything worked as expected.
+In testing, everything worked as expected except for one alignment issue on iOS Safari, and one button didn't show a pointer for the cursor.
 
-Full testing: 
+Full testing: [Testing Doc](https://raw.githubusercontent.com/MrRicearonie/html200-adopt-a-dog/assignment10/testing/testing.txt)
