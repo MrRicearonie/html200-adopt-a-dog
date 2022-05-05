@@ -20,11 +20,12 @@ I wanted to test on the most devices I possible could. To do this I used a combi
 *Operating Systems*
 | OS | Computer |
 | ------- | -------|
-| MacOS 12 | 2022 MacBook Pro 14"|
+| MacOS 12 | 2021 MacBook Pro 14"|
 | Windows 10 | 2018 Desktop with Ultrawide screen |
-| Ubuntu | 2018 Desktop with Ultrawide screen| 
-iOS 15 | iPhone Xr| 
-| Android 11 | Nokia 2.3| 
+| Ubuntu | 2018 Desktop with Ultrawide screen | 
+| iOS 14 | iPhone 8 |
+| iOS 15 | iPhone Xr | 
+| Android 11 | Nokia 2.3 | 
 
 *Browsers*
 - Safari

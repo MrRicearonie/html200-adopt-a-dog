@@ -6,8 +6,9 @@ Operating systems tested
 - MacOS 12 (14" MacBook Pro)
 - Windows 10 (2018 Desktop with UltraWide (21:9) display)
 - Ubuntu (2018 Desktop with UltraWide (21:9) display)
-- iOS (iPhone Xr)
-- Android (Nokia 2.3)
+- iOS 14 (iPhone 8)
+- iOS 15 (iPhone Xr)
+- Android 11 (Nokia 2.3)
 
 
 Browsers tested
