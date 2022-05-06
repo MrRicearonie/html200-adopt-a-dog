@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <meta name="theme-color" content="#093c60">
-        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="shortcut icon" href="./images/favicon.png">
         <title>Checkout | ADOPTADOG</title>
         <link rel="stylesheet" type="text/css" href="styles/shared.css">
         <link rel="stylesheet" type="text/css" href="styles/checkout.css">
@@ -53,7 +53,7 @@
             <div class="content flex">
                 <div class="fit-content">
                     <h1>Checkout</h1>
-                    <form method="post" class="checkout-form">
+                    <form method="post" class="checkout-form" id="checkout">
                         <label for="name">Name</label><br>
                         <input type="text" name="name" id="name" class="checkout-full-width" required><br>
                         <label for="email">Email Address</label><br>
@@ -131,12 +131,12 @@
                         <fieldset>
                             <legend>First Time Adopter?</legend>
                             <label class="radio-container">
-                                <input type="radio" name="firstTime" class="radio" value="personal" required>
+                                <input type="radio" name="firstTime" class="radio" value="firstYes" id="firstYes" required>
                                 <span class="radio-button"></span>
                                 Yes
                             </label>
                             <label class="radio-container">
-                                <input type="radio" name="firstTime" class="radio" value="buisness">
+                                <input type="radio" name="firstTime" class="radio" value="firstNo" id="firstNo">
                                 <span class="radio-button"></span>
                                 No
                             </label>
@@ -193,6 +193,7 @@
             <!-- Footer End -->
         </div>
         <!-- Content End -->
-        <script src="js/dogs.js"></script>
+        <script src="./js/dogs.js"></script>
+        <script src="./js/checkout.js"></script>
     </body>
 </html>
