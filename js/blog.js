@@ -29,6 +29,7 @@ const blogPosts = [{
 },
 ];
 
+/* Set previews on the homepage */
 function home() {
   for (let i = 0; i < 3; i += 1) {
     const post = blogPosts[i];
@@ -72,6 +73,7 @@ function home() {
   }
 }
 
+/* Place the blog posts on the screen */
 function blog() {
   for (let i = 0; i < blogPosts.length; i += 1) {
     const post = blogPosts[i];
